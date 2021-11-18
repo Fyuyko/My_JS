@@ -15,8 +15,8 @@
     position: absolute;
     height: 10%;
     width: 100%;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
     background-color: #fff;
   }
   .header__menu-icon::before,

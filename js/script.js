@@ -11,3 +11,26 @@ if (iconMenu) {
       bodyMenu.classList.toggle('active');
    });
 }
+
+
+// Slides
+
+const slides = document.querySelectorAll('.slide');
+
+for (let slide of slides) {
+
+   slide.addEventListener('click', () => {
+      cleanClass();
+
+      slide.classList.add('active');
+   });
+
+}
+
+function cleanClass() {
+
+   slides.forEach(item => {
+      item.classList.remove('active');
+   });
+
+}

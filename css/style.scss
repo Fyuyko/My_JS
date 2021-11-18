@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
 body {
+   font-family: 'Muli', sans-serif;
    font-size: 20px;
-   background-color: rgb(230, 205, 159);
+   background-color: rgb(204, 189, 162);
    margin: 0;
    padding: 0;
+   
 }
 
 body.lock {
@@ -57,10 +61,54 @@ body.lock {
    display: none;
 }
 
+// Slides
 
+.slides {
+   box-sizing: border-box;
+   height: 90vh;
+   overflow: hidden;
+}
 
+.slide__inner {
+   width: 100%;
+   display: flex;
+   /* padding: 0 10px; */
+}
 
-
+.slide {
+   height: 80vh;
+   cursor: pointer;
+   border-radius: 30px;
+   margin: 10px;
+   flex: 1;
+   color: rgb(88, 20, 20);
+   box-sizing: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   transition: all 500ms ease-in-out;
+ }
+ 
+ .slide h3 {
+   position: absolute;
+   font-size: 24px;
+   bottom: 20px;
+   left: 20px;
+   opacity: 0;
+   margin: 0;
+   background-color: #fff;
+   border-radius: 35px;
+   padding: 10px;
+ }
+ 
+ .slide.active {
+   flex: 10;
+ }
+ 
+ .slide.active h3 {
+   opacity: 1;
+   transition: opacity 0.3s ease-in 0.4s;
+ }
 
 
 
