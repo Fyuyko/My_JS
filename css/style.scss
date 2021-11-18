@@ -111,11 +111,10 @@ body.lock {
 }
 
 
-
 // task-list
 
 .task-list {
-   height: 70vh;
+   height: 35vh;
 }
 
 .task-list__header {
@@ -126,10 +125,6 @@ body.lock {
    background-color: rgb(155, 123, 123);
 
 }
-
-/* .task-list__header-title {
-   height: 100%;
-} */
 
 .task-list__columns {
    display: flex;
@@ -164,4 +159,94 @@ body.lock {
 .task-list__column-item.checked {
    text-decoration: line-through;
    color: rgb(97, 92, 92);
+}
+
+// carusel
+
+.sidebar-carusel {
+   height: 100vh;
+}
+
+.sidebar-container {
+   position: relative;
+   overflow: hidden;
+   height: 100vh;
+}
+
+.sidebar {
+   height: 100%;
+   width: 35%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+}
+
+.sidebar h1 {
+   font-size: 40px;
+   margin-bottom: 10px;
+   margin-top: -30px;
+}
+
+.main-slide {
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 35%;
+   width: 65%;
+   transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   height: 100%;
+   width: 100%;
+}
+
+button {
+   background-color: #fff;
+   border: none;
+   color: #aaa;
+   cursor: pointer;
+   font-size: 16px;
+   padding: 15px;
+}
+
+button:hover {
+   color: #222;
+}
+
+button:focus {
+   outline: none;
+}
+
+.sidebar-container .controls button {
+   position: absolute;
+   left: 35%;
+   top: 50%;
+   z-index: 100;
+}
+
+.sidebar-container .controls .down-button {
+   transform: translateX(-100%);
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+
+.sidebar-container .controls .up-button {
+   transform: translateY(-100%);
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
 }
