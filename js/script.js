@@ -34,3 +34,18 @@ function cleanClass() {
    });
 
 }
+
+// task-list
+
+const items = document.querySelectorAll('.task-list__column-item');
+const checkbox = document.querySelectorAll('#checkbox');
+
+// Event Listener:
+
+for (let box of checkbox) {
+   box.addEventListener('change', function(event) {
+      
+      box.parentNode.classList.toggle('checked');
+
+   });
+}

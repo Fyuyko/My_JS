@@ -87,9 +87,9 @@ body.lock {
    background-repeat: no-repeat;
    position: relative;
    transition: all 500ms ease-in-out;
- }
- 
- .slide h3 {
+}
+
+.slide h3 {
    position: absolute;
    font-size: 24px;
    bottom: 20px;
@@ -99,16 +99,69 @@ body.lock {
    background-color: #fff;
    border-radius: 35px;
    padding: 10px;
- }
+}
  
- .slide.active {
+.slide.active {
    flex: 10;
- }
+}
  
- .slide.active h3 {
+.slide.active h3 {
    opacity: 1;
    transition: opacity 0.3s ease-in 0.4s;
- }
+}
 
 
 
+// task-list
+
+.task-list {
+   height: 70vh;
+}
+
+.task-list__header {
+   height: 7vh;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 700;
+   background-color: rgb(155, 123, 123);
+
+}
+
+/* .task-list__header-title {
+   height: 100%;
+} */
+
+.task-list__columns {
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+   padding: 30px;
+   flex-wrap: wrap;
+}
+
+.task-list__column {
+   background-color: rgb(243, 236, 222);
+   padding: 20px;
+   margin: 7px;
+   border: 2px rgb(0, 0, 0) solid;
+   flex: 1;
+   min-width: 300px;
+}
+
+.task-list__column-category {
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.task-list__column-items {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   
+}
+
+.task-list__column-item.checked {
+   text-decoration: line-through;
+   color: rgb(97, 92, 92);
+}
