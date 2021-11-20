@@ -11,7 +11,6 @@
 <body>
 
    <header class="header">
-      <!-- Добавить прокрутку через JS https://www.youtube.com/watch?v=zs1r8yafTE8 -->
       <div class="container">
          <div class="header__inner">
             <div class="header__logo">Примеры JS</div>
@@ -20,11 +19,11 @@
             </div>
             <nav class="header__nav">
                <ul class="header__nav-menu">
-                  <li class="header__nav-item"><a data-goto="">Cards</a></li>
-                  <li class="header__nav-item"><a data-goto="">Slider</a></li>
-                  <li class="header__nav-item"><a data-goto="">Drag-n-drop</a></li>
-                  <li class="header__nav-item"><a data-goto="">Modal dialog</a> </li>
-                  <li class="header__nav-item"><a data-goto="">Tabs</a></li> 
+                  <li class="header__nav-item"><a href="#slides">Slides</a></li>
+                  <li class="header__nav-item"><a href="#task-list">task-list</a></li>
+                  <li class="header__nav-item"><a href="#sidebar-carusel">carusel</a></li>
+                  <li class="header__nav-item"><a href="#drag-n-drop">drag-n-drop</a> </li>
+                  <li class="header__nav-item"><a href="">Modal dialog</a></li> 
                </ul>
             </nav>
          </div>
@@ -32,7 +31,8 @@
    </header>
 
 
-   <div class="slides">
+   <div class="slides" id="slides">
+      <div class="name__item">Слайды</div> 
       <div class="slide__inner">
 
          <div class="slide"
@@ -60,7 +60,9 @@
       </div>
    </div> <!-- /slides -->
 
-   <div class="task-list">
+   
+   <div class="task-list" id="task-list">
+      <div class="name__item">Список задач</div> 
       <div class="container">
          <div class="task-list__inner">
             <div class="task-list__header">
@@ -101,7 +103,8 @@
       </div>
    </div>
 
-   <div class="sidebar-carusel">
+   <div class="sidebar-carusel" id="sidebar-carusel">
+      <div class="name__item">Карусель карточек</div>
       <div class="sidebar-container">
          <div class="sidebar">
             <div style="background: linear-gradient(229.99deg, #e7dd65d9 -26%, #feac24db 145%);">
@@ -149,6 +152,26 @@
          </div>
       </div>
    </div>
+
+
+   <div class="drag-n-drop" id="drag-n-drop">
+      <div class="name__item">drag-n-drop</div>
+      <div class="drag-n-drop__inner">
+         <div class="row">
+            <div class="col-header start">Начать</div>
+            <div class="col-header progress">В процессе</div>
+            <div class="col-header done">Готовы</div>
+         </div>
+
+         <div class="row">
+         <div class="placeholder">
+            <div class="item" draggable="true">Перетащи меня</div>
+         </div>
+         <div class="placeholder"></div>
+         <div class="placeholder"></div>
+         </div>
+      </div>
+    </div>
 
 
 
